@@ -38,6 +38,7 @@ public boolean isCellEmpty(int x, int y)
     }
 
     public void print() {
+        System.out.println("\n--------");
         for (int i = 0; i < cells.length; i++) {
             for (int j = 0; j < cells[i].length; j++) {
                 System.out.print(cells[i][j] == '\u0000' ? " |" : cells[i][j] + "|");
