@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e78cbc3-c1f6-4bd7-9046-2c2c58e18f00" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/tests/BoardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tests/PlayerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tests/TicTacToeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/TicTacToe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/TicTacToeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +146,7 @@
       <workItem from="1703598433403" duration="4084000" />
       <workItem from="1703684189239" duration="3038000" />
       <workItem from="1703698694242" duration="1196000" />
-      <workItem from="1703762362138" duration="2133000" />
+      <workItem from="1703762362138" duration="2508000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />

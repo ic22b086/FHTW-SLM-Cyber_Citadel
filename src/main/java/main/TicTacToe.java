@@ -15,7 +15,7 @@ public class TicTacToe {
     }
 
     public void start() {
-        // Implement game logic here
+        // todo
     }
 
     public void switchCurrentPlayer() {
@@ -23,7 +23,7 @@ public class TicTacToe {
     }
 
     public boolean hasWinner() {
-        // Implement winning conditions here
+        // todo
         return false;
     }
 
@@ -36,7 +36,7 @@ public class TicTacToe {
         Player playerO = new Player('O');
         TicTacToe game = new TicTacToe(playerX, playerO);
 
-        // Display initial state
+        // display basiC state
         game.board.print();
     }
 

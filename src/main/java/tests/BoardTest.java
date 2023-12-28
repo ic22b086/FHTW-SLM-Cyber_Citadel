@@ -21,12 +21,11 @@ public class BoardTest {
         Board board = new Board();
 
         assertFalse(board.isFull());
-        // Fill the board with X and O (adjust based on your game logic)
-        // ...
+
 
         assertTrue(board.isFull());
     }
 
-    // Add more tests based on your board and game logic
+    // todo implement further game logic
 }
 

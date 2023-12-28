@@ -27,7 +27,7 @@ public class TicTacToeTest {
         Player playerO = new Player('O');
         TicTacToe game = new TicTacToe(playerX, playerO);
 
-        // Implement the board state that leads to a win
+
         game.getBoard().place(0, 0, 'X');
         game.getBoard().place(0, 1, 'X');
         game.getBoard().place(0, 2, 'X');
@@ -35,5 +35,5 @@ public class TicTacToeTest {
         assertTrue(game.hasWinner());
     }
 
-    // Add more tests based on your game logic and requirements
+    // todo add further tests
 }
