@@ -1,4 +1,4 @@
-package org.example;
+package main;
 
 public class Board {
 
@@ -46,7 +46,5 @@ public boolean isCellEmpty(int x, int y)
             System.out.println("\n--------");
         }
     }
-
-
 
 }

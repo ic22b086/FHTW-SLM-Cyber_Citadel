@@ -1,4 +1,4 @@
-package org.example;
+package main;
 
 // Player.java
 public class Player {

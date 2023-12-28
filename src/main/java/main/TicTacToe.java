@@ -1,4 +1,4 @@
-package org.example;
+package main;
 
 // TicTacToe.java
 public class TicTacToe {
@@ -27,6 +27,10 @@ public class TicTacToe {
         return false;
     }
 
+    public Player getCurrentPlayer() {
+        return currentPlayer;
+    }
+
     public static void main(String[] args) {
         Player playerX = new Player('X');
         Player playerO = new Player('O');
@@ -34,5 +38,9 @@ public class TicTacToe {
 
         // Display initial state
         game.board.print();
+    }
+
+    public Board getBoard() {
+        return board;
     }
 }
