@@ -11,4 +11,9 @@ public class Player {
     public char getMarker() {
         return marker;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(marker);
+    }
 }
