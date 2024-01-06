@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e78cbc3-c1f6-4bd7-9046-2c2c58e18f00" name="Changes" comment="initial">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/TicTacToe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/TicTacToe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/BoardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TicTacToeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/TicTacToeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +58,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.TicTacToe.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main.TicTacToe.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.BoardTest.testIsCellEmpty.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.PlayerTest.testGetMarker.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TicTacToeTest.testSwitchCurrentPlayer.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;show-board&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/812-make-move&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/TheDragonLoli/Desktop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -73,13 +78,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.PlayerTest.testGetMarker">
-    <configuration name="TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.TicTacToe" />
+  <component name="RunManager" selected="Application.main.TicTacToe">
+    <configuration name="main.TicTacToe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.TicTacToe" />
       <module name="TicTacToe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,18 +124,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TicTacToeTest.testHasWinner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testHasWinner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicTacToeTest.testSwitchCurrentPlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TicTacToe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TicTacToeTest" />
+      <option name="METHOD_NAME" value="testSwitchCurrentPlayer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.main.TicTacToe" />
+        <item itemvalue="JUnit.TicTacToeTest.testSwitchCurrentPlayer" />
+        <item itemvalue="JUnit.TicTacToeTest.testHasWinner" />
         <item itemvalue="JUnit.PlayerTest.testGetMarker" />
         <item itemvalue="JUnit.BoardTest.testIsCellEmpty" />
-        <item itemvalue="Application.TicTacToe" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
       </set>
     </attachedChunks>
   </component>
@@ -147,6 +186,11 @@
       <workItem from="1703684189239" duration="3038000" />
       <workItem from="1703698694242" duration="1196000" />
       <workItem from="1703762362138" duration="2508000" />
+      <workItem from="1703877689028" duration="1706000" />
+      <workItem from="1704221913969" duration="14082000" />
+      <workItem from="1704405580076" duration="12000" />
+      <workItem from="1704480543882" duration="2033000" />
+      <workItem from="1704483256070" duration="806000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
