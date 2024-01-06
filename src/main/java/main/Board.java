@@ -1,5 +1,4 @@
 package main;
-import java.util.Arrays;
 
 public class Board {
 
@@ -12,7 +11,7 @@ public class Board {
 
 public boolean isCellEmpty(int x, int y)
 {
-    return cells[x][y] == ' '; // Check if cell is empty (null character)
+    return cells[x][y] == '\u0000'; // Check if cell is empty (null character)
 }
 
     public void place(int x, int y, char marker) {
@@ -22,7 +21,7 @@ public boolean isCellEmpty(int x, int y)
     public boolean isFull() {
         for (char[] row : cells) {
             for (char cell : row) {
-                if (cell == ' ') {
+                if (cell == '\u0000') {
                     return false; // Board is not full
                 }
             }
@@ -31,22 +30,21 @@ public boolean isCellEmpty(int x, int y)
     }
 
     public void clear() {
-        for (char[] cell : cells) {
-            // Clear the board
-            Arrays.fill(cell, ' ');
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                cells[i][j] = '\u0000'; // Clear the board
+            }
         }
     }
 
     public void print() {// Display Board State
         System.out.println("\n--------");
-        for (char[] cell : cells) {
-            System.out.print("| ");
-            for (char c : cell) {
-                System.out.print(c + " | ");
+        for (int i = 0; i < cells.length; i++) {
+            for (int j = 0; j < cells[i].length; j++) {
+                System.out.print(cells[i][j] == '\u0000' ? " |" : cells[i][j] + "|");
             }
-            System.out.println();
+            System.out.println("\n--------");
         }
-        System.out.println("\n--------");
     }
 
 }
