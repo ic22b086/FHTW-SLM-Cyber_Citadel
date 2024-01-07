@@ -21,5 +21,9 @@
             <scope>compile</scope>
         </dependency>
     </dependencies>
-
+    <build>
+        <testSourceDirectory>
+            src/main/java/tests
+        </testSourceDirectory>
+    </build>
 </project>

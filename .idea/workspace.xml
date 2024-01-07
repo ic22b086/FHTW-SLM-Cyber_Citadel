@@ -161,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main.TicTacToe" />
         <item itemvalue="JUnit.TicTacToeTest.testSwitchCurrentPlayer" />
         <item itemvalue="JUnit.TicTacToeTest.testHasWinner" />
         <item itemvalue="JUnit.PlayerTest.testGetMarker" />
         <item itemvalue="JUnit.BoardTest.testIsCellEmpty" />
+        <item itemvalue="Application.main.TicTacToe" />
       </list>
     </recent_temporary>
   </component>
@@ -252,5 +252,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FHTW_SLM_Cyber_Citadel$main_TicTacToe.ic" NAME="main.TicTacToe Coverage Results" MODIFIED="1704559923810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>main.*</FILTER>
+    </SUITE>
   </component>
 </project>
