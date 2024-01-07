@@ -95,7 +95,7 @@ public class TicTacToeTest {
         game.validateMove(0, 0);
         game.validateMove(0, 0);
 
-        assertEquals("This cell is already taken, Please choose another cell", outputStream.toString());
+        assertEquals("This cell is already taken, Please choose another cell\n", outputStream.toString());
 
     }
     @Test
