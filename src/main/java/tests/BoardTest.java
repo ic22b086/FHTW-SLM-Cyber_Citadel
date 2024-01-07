@@ -48,7 +48,7 @@ public class BoardTest {
     }
 
     @Test
-    public void testClear(){
+    public void testIsClear(){
         Board board = new Board();
 
         board.place(0, 0, 'X');
