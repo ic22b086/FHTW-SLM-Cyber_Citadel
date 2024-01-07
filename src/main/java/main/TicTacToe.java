@@ -1,7 +1,5 @@
 package main;
 
-import java.util.Scanner;
-
 // TicTacToe.java
 public class TicTacToe {
     private Player player1;
@@ -17,7 +15,7 @@ public class TicTacToe {
     }
 
     public void start() {
-        //todo
+        // todo
     }
 
     public void switchCurrentPlayer() {
@@ -25,48 +23,24 @@ public class TicTacToe {
     }
 
     public boolean hasWinner() {
-        //todo
+        // todo
         return false;
     }
-
 
     public Player getCurrentPlayer() {
         return currentPlayer;
     }
 
     public static void main(String[] args) {
-        Player player1 = new Player('X');
-        Player player2 = new Player('O');
-        TicTacToe game = new TicTacToe(player1, player2);
+        Player playerX = new Player('X');
+        Player playerO = new Player('O');
+        TicTacToe game = new TicTacToe(playerX, playerO);
 
-        game.start();
-
+        // display basiC state
+        game.board.print();
     }
 
     public Board getBoard() {
         return board;
-    }
-
-
-    public void validateMove(int row, int col){
-
-        if (row < 0 || row > 2) {
-            System.out.println("Invalid row. Please enter a number between 0 and 2.");
-            return;
-        }
-
-        if (col < 0 || col > 2) {
-            System.out.println("Invalid column. Please enter a number between 0 and 2.");
-            return;
-
-        }
-        if (!board.isCellEmpty(row, col)){
-            System.out.println("This cell is already taken, Please choose another cell");
-            return;
-        }
-
-        board.place(row, col, currentPlayer.getMarker());
-        switchCurrentPlayer();
-
     }
 }
