@@ -13,7 +13,7 @@ public class BoardTest {
 
         assertTrue(board.isCellEmpty(0, 0));
         board.place(0, 0, 'X');
-        assertFalse(board.isCellEmpty(0, 0));
+        assertFalse(board.isCellEmpty(0,0));
     }
 
     @Test
@@ -25,7 +25,25 @@ public class BoardTest {
 
         assertTrue(board.isFull());
     }
+    @Test
+    public void testClear() {
+        Board board = new Board();
 
-    // todo implement further game logic
+        //Place test markler
+        board.place(0,0, 'X');
+        board.place(1, 1, 'O');
+
+            //Clear board
+        board.clear();
+
+        //Check if clearing succeeded
+        assertTrue(board.isCellEmpty(0,0));
+        assertTrue(board.isCellEmpty(1, 1));
+    }
+
+
+
 }
+
+
 
