@@ -58,17 +58,17 @@ public class TicTacToe {
     public void validateMove(int row, int col){
 
         if (row < 0 || row > 2) {
-            System.out.println("Invalid row. Please enter a number between 0 and 2.");
+            System.out.printf("Invalid row. Please enter a number between 0 and 2.\n");
             return;
         }
 
         if (col < 0 || col > 2) {
-            System.out.println("Invalid column. Please enter a number between 0 and 2.");
+            System.out.printf("Invalid column. Please enter a number between 0 and 2.\n");
             return;
 
         }
         if (!board.isCellEmpty(row, col)){
-            System.out.println("This cell is already taken, Please choose another cell");
+            System.out.printf("This cell is already taken, Please choose another cell\n");
             return;
         }
 

@@ -85,25 +85,39 @@ public class TicTacToeTest {
 
 
 
-    @Disabled("Error because of a difference in line feed with git and local (crlf vs lf), needs fixing")
-        @Test
-        public void testValidateMove(){
-            Player playerX = new Player('X');
-            Player playerO = new Player('O');
-            TicTacToe game = new TicTacToe(playerX, playerO);
 
-            game.validateMove(0, 0);
-            game.validateMove(0, 0);
+    @Test
+    public void testValidateMoveRepeat(){
+        Player playerX = new Player('X');
+        Player playerO = new Player('O');
+        TicTacToe game = new TicTacToe(playerX, playerO);
 
-            assertEquals("This cell is already taken, Please choose another cell\n", outputStream.toString());
+        game.validateMove(0, 0);
+        game.validateMove(0, 0);
 
-            game.validateMove(4,4);
-            assertEquals("Invalid row. Please enter a number between 0 and 2.\n", outputStream.toString());
 
-            game.validateMove(0,4);
-            assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
+    }
+    @Test
+    public void testValidateMoveOOB(){
+        Player playerX = new Player('X');
+        Player playerO = new Player('O');
+        TicTacToe game = new TicTacToe(playerX, playerO);
 
-        }
+        game.validateMove(4,4);
+        assertEquals("Invalid row. Please enter a number between 0 and 2.\n", outputStream.toString());
+
+
+    }
+    @Test
+    public void testValidateMoveOOB2(){
+        Player playerX = new Player('X');
+        Player playerO = new Player('O');
+        TicTacToe game = new TicTacToe(playerX, playerO);
+
+        game.validateMove(0,4);
+        assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
+
+    }
 
 
 }
