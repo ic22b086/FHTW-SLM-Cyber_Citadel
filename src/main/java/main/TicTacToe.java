@@ -17,7 +17,31 @@ public class TicTacToe {
     }
 
     public void start() {
-        //todo
+        int row, col;
+        Scanner scan = new Scanner(System.in);
+        String playAgain;
+        do{
+
+            do{
+                // display basic state
+                getBoard().print();
+                System.out.println("Player " + getCurrentPlayer() + ", please enter your row");
+                row = scan.nextInt();
+                System.out.println("Player " + getCurrentPlayer() + ", please enter your col");
+                col = scan.nextInt();
+
+                validateMove(row, col);
+            }while(!hasWinner() && !board.isFull());
+            if (hasWinner()){
+                switchCurrentPlayer();
+                System.out.println("Congrats You won " + getCurrentPlayer());
+            }else{
+                System.out.println("Game is a draw");
+            }
+            System.out.println("Would you like to play again? (y/n)");
+            playAgain = scan.next();
+            board.clear();
+        }while(playAgain.equals("y"));
     }
 
     public void switchCurrentPlayer() {
