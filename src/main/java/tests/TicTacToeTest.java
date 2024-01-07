@@ -3,10 +3,12 @@ package tests;
 // TicTacToeTest.java
 import main.Player;
 import main.TicTacToe;
+
 import org.junit.Ignore;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
+
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -86,6 +88,7 @@ public class TicTacToeTest {
     }
 
 
+
     @Disabled("Error because of a difference in line feed with git and local (crlf vs lf), needs fixing")
         @Test
         public void testValidateMove(){
@@ -105,5 +108,6 @@ public class TicTacToeTest {
             assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
 
         }
+
 
 }
