@@ -6,6 +6,7 @@ import main.TicTacToe;
 import org.junit.Ignore;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
@@ -85,25 +86,24 @@ public class TicTacToeTest {
     }
 
 
-    @Ignore("Error because of a difference in line feed with git and local (crlf vs lf), needs fixing")
-    @Test
-    public void testValidateMove(){
-        Player playerX = new Player('X');
-        Player playerO = new Player('O');
-        TicTacToe game = new TicTacToe(playerX, playerO);
+    @Disabled("Error because of a difference in line feed with git and local (crlf vs lf), needs fixing")
+        @Test
+        public void testValidateMove(){
+            Player playerX = new Player('X');
+            Player playerO = new Player('O');
+            TicTacToe game = new TicTacToe(playerX, playerO);
 
-        game.makeMove(0, 0);
-        game.makeMove(0, 0);
+            game.makeMove(0, 0);
+            game.makeMove(0, 0);
 
-        assertEquals("This cell is already taken, Please choose another cell\n", outputStream.toString());
+            assertEquals("This cell is already taken, Please choose another cell\n", outputStream.toString());
 
-        game.makeMove(4,4);
-        assertEquals("Invalid row. Please enter a number between 0 and 2.\n", outputStream.toString());
+            game.makeMove(4,4);
+            assertEquals("Invalid row. Please enter a number between 0 and 2.\n", outputStream.toString());
 
-        game.makeMove(0,4);
-        assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
+            game.makeMove(0,4);
+            assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
 
-    }
+        }
 
-    // todo add further tests
 }
