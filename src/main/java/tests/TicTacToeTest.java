@@ -96,15 +96,15 @@ public class TicTacToeTest {
             Player playerO = new Player('O');
             TicTacToe game = new TicTacToe(playerX, playerO);
 
-            game.makeMove(0, 0);
-            game.makeMove(0, 0);
+            game.validateMove(0, 0);
+            game.validateMove(0, 0);
 
             assertEquals("This cell is already taken, Please choose another cell\n", outputStream.toString());
 
-            game.makeMove(4,4);
+            game.validateMove(4,4);
             assertEquals("Invalid row. Please enter a number between 0 and 2.\n", outputStream.toString());
 
-            game.makeMove(0,4);
+            game.validateMove(0,4);
             assertEquals("Invalid column. Please enter a number between 0 and 2.\n", outputStream.toString());
 
         }
